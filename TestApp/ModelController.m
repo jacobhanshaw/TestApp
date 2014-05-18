@@ -32,8 +32,32 @@
     self = [super init];
     if (self) {
         // Create the data model.
-        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-        _pageData = [[dateFormatter monthSymbols] copy];
+  //      NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        NSMutableArray *animation = [[NSMutableArray alloc] init];
+        [animation addObject:@"          <(' '<)      "];
+        [animation addObject:@"          (>' ')>      "];
+        [animation addObject:@" ==~~~~~  <(' '<)      "];
+        [animation addObject:@" ==~~~~   (>' ')>      "];
+        [animation addObject:@" ==~~~    <(' '<)      "];
+        [animation addObject:@" ==~~     (>' ')>      "];
+        [animation addObject:@" ==~      (>' ')>      "];
+        [animation addObject:@" ==       <(' '<)      "];
+        [animation addObject:@" *(@)*    (>' ')>      "];
+        [animation addObject:@"**(@)**** <(' '<)      "];
+        [animation addObject:@"**(@)******* ^ . -)>   "];
+        [animation addObject:@"**(@)************* -)^ "];
+        [animation addObject:@"**(@)******************"];
+        [animation addObject:@"                       "];
+        [animation addObject:@"You killed Kirby!!!!!!!"];
+        [animation addObject:@"You bastard!!!!!!!!!!!!"];
+        [animation addObject:@"           :'(         "];
+        [animation addObject:@"    Stop, Just Stop    "];
+        [animation addObject:@"   Wait, what's this?  "];
+        [animation addObject:@"          <(' '<)      "];
+        [animation addObject:@"        Kirby!         "];
+        [animation addObject:@"          (>' ')>      "];
+        //_pageData = [[dateFormatter monthSymbols] copy];
+        _pageData = animation;
     }
     return self;
 }
